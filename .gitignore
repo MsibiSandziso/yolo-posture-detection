@@ -1,0 +1,8 @@
+annotations/
+train2017/
+val2017/
+runs/
+yolo_keypoints_format/
+*.pt
+*.png
+*.json

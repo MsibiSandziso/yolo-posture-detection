@@ -1,0 +1,18 @@
+# Root of the dataset
+path: /Users/msibisandzisothando/Downloads/YOLO_Project/yolo_keypoints_format
+
+# Relative to 'path'
+train: train/images
+val: val/images
+
+# One class (person), 17 keypoints, 3 values per keypoint (x, y, v)
+nc: 1
+names: [person]
+
+# Each person has 17 keypoints with (x, y, visibility)
+kpt_shape: [17, 3]
+
+# COCO keypoint flip order (left-right swap indices)
+# 0:nose, 1:LEye, 2:REye, 3:LEar, 4:REar, 5:LShoulder, 6:RShoulder, 7:LElbow, 8:RElbow,
+# 9:LWrist, 10:RWrist, 11:LHip, 12:RHip, 13:LKnee, 14:RKnee, 15:LAnkle, 16:RAnkle
+flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
